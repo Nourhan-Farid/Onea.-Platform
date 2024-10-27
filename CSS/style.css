@@ -1,0 +1,482 @@
+body {
+    /* background-color: darkseagreen; */
+    font-family: "Poppins", sans-serif;
+}
+
+/* --------------------------------------------Start of navbar section-------------------------------------- */
+.navbar {
+    display: none;
+    position: relative;
+}
+
+.offcanvas {
+    height: 500px !important;
+    --bs-offcanvas-transition: transform 0.7s ease-in-out;
+}
+
+@media screen and (max-width:992px) {
+    .navbar {
+        display: block;
+    }
+
+}
+
+.nour {
+    font-size: 14px;
+}
+
+/* --------------------------------------------End of navbar section-------------------------------------- */
+
+
+/* floating btns */
+.floating-btns {
+    z-index: 7000 !important;
+    position: fixed !important;
+    bottom: 150px;
+    right: 0;
+}
+
+.floating-btns button {
+    width: 140px;
+    position: fixed;
+    z-index: 7000 !important;
+    transition: all 0.7s;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -ms-transition: all 0.7s;
+    -o-transition: all 0.7s;
+    transform: translateX(90px);
+    -webkit-transform: translateX(90px);
+    -moz-transform: translateX(90px);
+    -ms-transform: translateX(90px);
+    -o-transform: translateX(90px);
+}
+
+.FBtn-1 {
+    background-color: #EF2853;
+    border: 2px solid #EF2853;
+    color: white;
+
+}
+
+.FBtn-1 i {
+    color: white;
+}
+
+.FBtn-2 {
+    background-color: white;
+    border: 2px solid white;
+    color: #EF2853;
+
+}
+
+.FBtn-2 i {
+    color: #EF2853;
+}
+
+.FBtn-1:hover,
+.FBtn-2:hover {
+    right: 0 !important;
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+}
+
+/* .Main-Home .floating-btns:hover*/
+
+/* floating btns */
+
+
+/* --------------------------------------------Start of sidebar section-------------------------------------- */
+.sideNav {
+    width: 300px;
+    left: 0;
+    height: 100vh;
+    /* overflow: auto; */
+    background-color: white !important;
+}
+
+.accordion {
+    width: 300px;
+    padding: 20px 30px;
+    --bs-accordion-border-color: white;
+    --bs-accordion-border-radius: 0;
+    --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3C!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--%3E%3Cpath d='M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z'/%3E%3C/svg%3E");
+    --bs-accordion-btn-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3C!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--%3E%3Cpath d='M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z'/%3E%3C/svg%3E");
+    --bs-accordion-bg: transparent;
+
+}
+
+.accordion-button {
+    background-color: white !important;
+    font-weight: 600 !important;
+    padding: 10px;
+}
+
+.accordion-button::after {
+    display: flex;
+}
+
+.accordion-button:not(.collapsed) {
+    color: black;
+    background-color: white !important;
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+
+.accordion-button:not(.collapsed)::after {
+
+    color: black !important;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+}
+
+.accordion-link:not(.collapsed)::after {
+    display: none !important;
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    border-color: white !important;
+    outline: 0;
+    box-shadow: none;
+}
+
+.span-0,
+.accordion-header,
+.li-body {
+    position: relative;
+}
+
+.span-0::before,
+.accordion-header::before,
+.li-body::before {
+    content: "";
+    position: absolute;
+    align-items: center;
+    bottom: 0px;
+    left: 10px;
+    width: 0% !important;
+    height: 2px;
+    background-color: black !important;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    z-index: 200000;
+}
+
+
+.li-body::before {
+    left: 0px !important;
+
+}
+
+.span-0:hover::before,
+.portoLink:hover::before,
+.li-body:hover::before {
+    width: 100% !important;
+}
+
+.accordion-header:hover::before {
+    width: 25% !important;
+}
+
+.sidebar-p {
+    font-size: 13px;
+    font-weight: 500;
+
+}
+
+@media screen and (max-width:992px) {
+    .sideNav {
+        display: none;
+    }
+
+}
+
+/* --------------------------------------------End of sidebar section-------------------------------------- */
+/* ---------------------------------------------Start of Main-section---------------------------------------------- */
+.main-sec {
+    width: calc(100% - 300px);
+    overflow: auto !important;
+}
+
+.container-fluid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(150px, auto);
+    /* grid-auto-columns: 1fr; */
+    gap: 15px 15px;
+    /* grid-auto-flow: row; */
+    grid-template-areas:
+        "yellow-plate blue-chair two-colour-plate blue-bottle"
+        "wooden-set designer-spoons wooden-box bronze-plate"
+        "pink-pillows yellow-vase cristal-plate fruit-bowl"
+        "golden-plate coffee-cup fish-bowl wooden-bottle";
+}
+
+.yellow-plate {
+    grid-area: yellow-plate;
+    position: relative;
+    overflow: hidden;
+}
+
+.blue-chair {
+    grid-area: blue-chair;
+    position: relative;
+    overflow: hidden;
+}
+
+.two-colour-plate {
+    grid-area: two-colour-plate;
+    position: relative;
+    overflow: hidden;
+}
+
+.blue-bottle {
+    grid-area: blue-bottle;
+    position: relative;
+    overflow: hidden;
+}
+
+.wooden-set {
+    grid-area: wooden-set;
+    position: relative;
+    overflow: hidden;
+}
+
+.designer-spoons {
+    grid-area: designer-spoons;
+    position: relative;
+    overflow: hidden;
+}
+
+.wooden-box {
+    grid-area: wooden-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.bronze-plate {
+    grid-area: bronze-plate;
+    position: relative;
+    overflow: hidden;
+}
+
+.pink-pillows {
+    grid-area: pink-pillows;
+    position: relative;
+    overflow: hidden;
+}
+
+.yellow-vase {
+    grid-area: yellow-vase;
+    position: relative;
+    overflow: hidden;
+}
+
+.cristal-plate {
+    grid-area: cristal-plate;
+    position: relative;
+    overflow: hidden;
+}
+
+.fruit-bowl {
+    grid-area: fruit-bowl;
+    position: relative;
+    overflow: hidden;
+}
+
+.golden-plate {
+    grid-area: golden-plate;
+    position: relative;
+    overflow: hidden;
+}
+
+.coffee-cup {
+    grid-area: coffee-cup;
+    position: relative;
+    overflow: hidden;
+}
+
+.fish-bowl {
+    grid-area: fish-bowl;
+    position: relative;
+    overflow: hidden;
+}
+
+.wooden-bottle {
+    grid-area: wooden-bottle;
+    /* position: relative; */
+    overflow: hidden;
+}
+
+
+.card-item {
+    overflow: hidden;
+}
+
+.layer {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.844);
+    opacity: 0;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    z-index: 2;
+}
+
+.card-item:hover .layer {
+    opacity: 1;
+}
+
+.card-item img {
+    transition: all 0.7s;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -ms-transition: all 0.7s;
+    -o-transition: all 0.7s;
+}
+
+.card-item:hover img {
+    transform: translateX(-10px);
+    -webkit-transform: translateX(-10px);
+    -moz-transform: translateX(-10px);
+    -ms-transform: translateX(-10px);
+    -o-transform: translateX(-10px);
+}
+
+.anchor-div ion-icon:hover,
+.anchor-div i:hover {
+    opacity: 0.7;
+}
+
+#white-box,
+#wooden-bottle,
+#yellow-vase {
+    position: relative;
+}
+
+#white-box::before,
+#wooden-bottle::before,
+#yellow-vase::before {
+    content: "SALE";
+    position: absolute;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    top: 17px;
+    left: 0px;
+    background-color: black;
+    color: white;
+    font-weight: 300;
+    font-size: 13px;
+    z-index: 200;
+    letter-spacing: 1px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+
+#yellow-vase::before {
+    content: "NEW" !important;
+    background-color: white !important;
+    color: black !important;
+}
+
+@media screen and (max-width:992px) {
+    .main-sec {
+        width: 100%;
+    }
+
+    .container-fluid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-auto-columns: 1fr;
+        gap: 15px 15px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "yellow-plate blue-chair two-colour-plate"
+            "blue-bottle wooden-set designer-spoons"
+            "wooden-box bronze-plate pink-pillows"
+            "yellow-vase cristal-plate fruit-bowl"
+            "golden-plate coffee-cup fish-bowl"
+            "wooden-bottle . .";
+    }
+
+
+
+}
+
+@media screen and (max-width:768px) {
+    .main-sec {
+        width: 100%;
+    }
+
+    .container-fluid {
+        display: grid;
+        grid-template-columns: 1fr 1fr !important;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr !important;
+        /* grid-auto-columns: 1fr; */
+        gap: 15px 15px;
+        /* grid-auto-flow: row; */
+        grid-template-areas:
+            "yellow-plate blue-chair"
+            "two-colour-plate blue-bottle"
+            "wooden-set designer-spoons"
+            "wooden-box bronze-plate"
+            "pink-pillows yellow-vase"
+            "cristal-plate fruit-bowl"
+            "golden-plate coffee-cup"
+            "fish-bowl wooden-bottle";
+    }
+
+
+
+}
+
+@media screen and (max-width:576px) {
+    .main-sec {
+        width: 100%;
+    }
+
+    .container-fluid {
+        display: grid;
+        grid-template-columns: 1fr !important;
+        grid-template-rows: repeat(16, 1fr) !important;
+        gap: 15px 15px;
+        grid-template-areas:
+            "yellow-plate"
+            "blue-chair"
+            "two-colour-plate"
+            "blue-bottle"
+            "wooden-set"
+            "designer-spoons"
+            "wooden-box"
+            "bronze-plate"
+            "pink-pillows"
+            "yellow-vase"
+            "cristal-plate"
+            "fruit-bowl"
+            "golden-plate"
+            "coffee-cup"
+            "fish-bowl"
+            "wooden-bottle";
+    }
+
+
+
+}
+
+/* ---------------------------------------------End of Main-section---------------------------------------------- */
